@@ -10,6 +10,12 @@ func _on_pressed() -> void:
 	else:
 		show_selection_window("Select test scene path")
 
+func _on_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton\
+			and event.pressed\
+			and event.button_index == MOUSE_BUTTON_RIGHT:
+		show_selection_window("Select test scene path")
+
 func run_test_scene():
 	var current_scene := EditorInterface.get_edited_scene_root()
 	var test_scene_path := current_scene.get_meta(META_NAME)
