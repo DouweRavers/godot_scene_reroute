@@ -10,7 +10,7 @@ and traverse through the whole game or having to find the correct scene in "run 
 ## How to use?
 First enable the addons in project settings. After enabling it an additional button will appear.
 
-When pressing the "run test scene" button the first time on a scene it will open a file dialog asking
+When pressing the "run test scene" button the first time for a given scene or when right clicking it a file dialog appears asking
 to assign the test scene. This can be any scene, but its intention is that the current scene is a child
 of the test scene or the test scene is an inherited scene from the current.
 
